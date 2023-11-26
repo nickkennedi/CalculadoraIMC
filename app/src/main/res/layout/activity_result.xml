@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ResultActivity"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <LinearLayout
+        android:id="@+id/layout_card"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/banner_card"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/txtIndicie"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+      android:text="IMC"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="30sp"/>
+
+        <TextView
+          android:id="@+id/txtTitulo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+
+          android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+          android:text="resultado"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:textSize="25sp"/>
+
+        <TextView
+          android:id="@+id/resultado"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="resultado"
+          android:textColor="@color/white"
+          android:textSize="18sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+            android:id="@+id/layout_mini_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+              android:id="@+id/layout_peso"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginStart="60dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/white_card"
+              android:elevation="20dp"
+              android:orientation="vertical">
+
+              <ImageView
+                android:layout_width="34dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/peso" />
+
+              <TextView
+                android:id="@+id/peso_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+                android:text="60kg"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+              <TextView
+                android:id="@+id/txt_peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/plus_jakarta_sans_medium"
+                android:text="Peso"
+                android:textColor="@color/txt_bottons"
+                android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+              android:id="@+id/layout_altura"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/white_card"
+              android:elevation="20dp"
+              android:orientation="vertical">
+
+              <ImageView
+                android:layout_width="34dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/altura" />
+
+              <TextView
+                android:id="@+id/altura_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+                android:text="170cm"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+              <TextView
+                android:id="@+id/txt_altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/plus_jakarta_sans_medium"
+                android:text="Altura"
+                android:textColor="@color/txt_bottons"
+                android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+          </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </LinearLayout>
+
+
+  <TextView
+    android:id="@+id/txt_classificacao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="30dp"
+    android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+    android:text="CLASSIFICAÇÃO"
+    android:textColor="@color/txt_bottons"
+    android:textSize="26sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/layout_card" />
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    android:elevation="22dp"
+    android:background="@drawable/banner_classificados"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_classificacao">
+
+
+    <LinearLayout
+      android:id="@+id/linearLayoutUm"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_classificacao">
+
+      <ImageView
+        android:id="@+id/imageViewCicleUm"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/circle_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classificacao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/linearLayoutTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal"
+      app:layout_constraintStart_toEndOf="@+id/linearLayoutUm"
+      app:layout_constraintTop_toTopOf="@+id/linearLayoutUm">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="Menor que 18.5: "
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+        android:text=" Magreza"
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/linearLayoutDois"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayoutUm">
+
+      <ImageView
+        android:id="@+id/imageViewCicleDois"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/circle_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classificacao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal"
+      app:layout_constraintStart_toEndOf="@+id/linearLayoutDois"
+      app:layout_constraintTop_toTopOf="@+id/linearLayoutDois">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="Entre 18.5 e 24.9: "
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+        android:text=" Normal"
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/linearLayoutTres"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayoutDois">
+
+      <ImageView
+        android:id="@+id/imageViewCicleTres"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/circle_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classificacao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal"
+      app:layout_constraintStart_toEndOf="@+id/linearLayoutTres"
+      app:layout_constraintTop_toTopOf="@+id/linearLayoutTres">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="Entre 25.0 e 29.9: "
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+        android:text="Sobrepeso I"
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:id="@+id/linearLayoutQuatro"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayoutTres">
+
+      <ImageView
+        android:id="@+id/imageViewCicleQuatro"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/circle_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classificacao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal"
+      app:layout_constraintStart_toEndOf="@+id/linearLayoutQuatro"
+      app:layout_constraintTop_toTopOf="@+id/linearLayoutQuatro">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="Entre 30.0 e 39.9: "
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+        android:text="Sobrepeso II"
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/linearLayoutCinco"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayoutQuatro">
+
+      <ImageView
+        android:id="@+id/imageViewCicleCinco"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/circle_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classificacao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="-30dp"
+      android:orientation="horizontal"
+      app:layout_constraintStart_toEndOf="@+id/linearLayoutCinco"
+      app:layout_constraintTop_toTopOf="@+id/linearLayoutCinco">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="Entre 30.0 e 39.9: "
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+        android:text="Sobrepeso III"
+        android:textColor="@color/txt_bottons"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnCalcularNovamente"
+    style="@android:style/Widget.Button"
+    android:layout_width="315dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/banner_card"
+    android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+    android:text="Calcular Novamente"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

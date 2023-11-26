@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".WelcomeActivity"
+  android:background="@color/white">
+
+  <!--<ImageView
+    android:id="@+id/forma_dois"
+    android:layout_width="match_parent"
+    android:layout_height="258dp"
+    android:layout_marginTop="-30dp"
+    android:src="@drawable/forma_dois"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />-->
+
+  <ImageView
+    android:id="@+id/person"
+    android:layout_width="277dp"
+    android:layout_height="250dp"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/person"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/txtInfoDados"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:fontFamily="@font/poppins_bold"
+    android:text="Informe seus dados"
+    android:textColor="@color/txt_bottons"
+    android:textSize="22sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/person" />
+
+  <EditText
+    android:id="@+id/editText_peso"
+    android:maxLength="5"
+    android:layout_width="272dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/textfield_bg"
+    android:drawableStart="@drawable/peso"
+    android:drawablePadding="10dp"
+    android:elevation="18dp"
+    android:ems="10"
+    android:fontFamily="@font/plus_jakarta_sans_medium"
+    android:hint="Peso"
+    android:inputType="numberDecimal"
+    android:paddingStart="15dp"
+    android:textColor="@color/txt_bottons"
+    android:textColorHint="@color/txt_bottons"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtInfoDados" />
+
+  <ImageView
+    android:id="@+id/img_kg"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="18dp"
+    android:src="@drawable/button_kg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/editText_peso"
+    app:layout_constraintTop_toTopOf="@+id/editText_peso" />
+
+  <EditText
+    android:id="@+id/editText_altura"
+    android:maxLength="5"
+    android:layout_width="272dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/textfield_bg"
+    android:drawableStart="@drawable/altura"
+    android:drawablePadding="10dp"
+    android:elevation="18dp"
+    android:ems="10"
+    android:fontFamily="@font/plus_jakarta_sans_medium"
+    android:hint="Altura"
+    android:inputType="numberDecimal"
+    android:paddingStart="17dp"
+    android:textColor="@color/txt_bottons"
+    android:textColorHint="@color/txt_bottons"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="@+id/editText_peso"
+    app:layout_constraintStart_toStartOf="@+id/editText_peso"
+    app:layout_constraintTop_toBottomOf="@+id/editText_peso" />
+
+  <ImageView
+    android:id="@+id/img_cm"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="18dp"
+    android:src="@drawable/button_m"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/editText_altura"
+    app:layout_constraintTop_toTopOf="@+id/editText_altura" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnResetar"
+    style="@android:style/Widget.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/banner_card"
+    android:fontFamily="@font/plus_jakarta_sans_medium"
+    android:text="resetar"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editText_altura" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_calcular"
+    style="@android:style/Widget.Button"
+    android:layout_width="315dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/button_custom"
+    android:fontFamily="@font/plus_jakarta_sans_extra_bold"
+    android:text="Calcular"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
